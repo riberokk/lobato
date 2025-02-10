@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Professor Lobato</title>
+</head>
+<body>
+	<div class="pergunta">
+		<h2>(ENEM 2020) A literatura brasileira sempre acompanha os principais acontecimentos históricos do país. No século XIX, o Romantismo consolidou-se como uma escola literária dominante, refletindo o nacionalismo e o desejo de construção de uma identidade brasileira, especialmente após a Independência do Brasil em 1822. Os autores desse período exaltaram figuras heroicas, valorizaram a cultura nacional e destacaram a importância de líderes que inspiraram e conduziram grandes transformações.
+			Da mesma forma, na atualidade, certas decisões são fundamentais para celebrar momentos marcantes e considerar aqueles que tiveram papel significativo em uma jornada. Seguindo essa tradição de consideração de grandes líderes, a turma do 3°A convida o Professor Lobato para ser seu paraninfo. Qual seria a resposta mais apropriada?
+		</h2>
+	</div>
+
+	<div class="resposta">
+		<button  class="sim" onclick="sim()">Sim, certamente, é uma honra fazer parte dessa jornada.</button>
+		<br>
+		<button  class="sim" onclick="sim()">Sim, com certeza, é um momento que merece ser comemorado.</button>
+		<br>
+		<button  class="sim" onclick="sim()">Sim, claro, estou lisonjeado por essa escolha.</button>
+		<br>
+		<button class="nao" onclick="desvia(this)" onmouseover="desvia(this)">Não.</button>
+	</div>
+
+	<script>
+		function sim() {
+			// redireciona para um URL após clicar no SIM
+			location.href = "SIM.html";
+		}
+	
+		function desvia(btn) {
+		btn.style.display = "none";  // Esconde o botão por um instante
+		setTimeout(() => {
+			btn.style.position = 'absolute';
+			btn.style.bottom = geraPosicao(10, 90);
+			btn.style.left = geraPosicao(10, 90);
+			btn.style.display = "block";  // Exibe novamente
+		}, 50);
+		console.log('opa, desviei...');
+		}
+
+	
+		function geraPosicao(min, max) {
+			return (Math.random() * (max - min) + min) + "%";
+		}
+	
+	</script>
+
+</body>
+</html>

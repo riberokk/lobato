@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+}
+
+.pergunta{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.pergunta h2{
+	font-size: 15px;
+	width: 500px;
+}
+
+.nao {
+	position: absolute;
+	width: 80px; /* Ajuste conforme necessário */
+	height: 33px; /* Ajuste conforme necessário */
+	border: solid black 1px;
+	border-radius: 35px;
+	padding-block: 8px;
+	padding-inline: 15px;
+	color: black;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: top 0.1s, left 0.1s; /* Suaviza o movimento */
+	top: 83.5%;
+}  
+
+.resposta{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 25px;
+}
+
+.resposta .sim{
+	border: solid black 1px;
+	border-radius: 35px;
+	padding-block: 8px;
+	padding-inline: 15px;
+	color: black;
+	cursor: pointer;
+} 
+
+.resposta .sim:hover{
+	background-color: black;
+	color: white;
+}
